@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 199 2% 12%;
+    --secondary: 199 2% 56%;
+    --tertiary: 199 2% 69%;
+    --typography: 199 2% 20%;
+    --primary-reverse: 199 8% 86%;
+    --secondary-reverse: 199 8% 52%;
+    --tertiary-reverse: 199 8% 39%;
+    --typography-reverse: 199 8% 78%;
+    --border: 199 2% 88%;
+    --background: 199 2% 94%;
+    --body-background: 0 0% 99%;
+
+    font-family:
+      -apple-system,
+      system-ui,
+      Segoe UI,
+      Roboto,
+      Ubuntu,
+      Cantarell,
+      Noto Sans,
+      sans-serif,
+      BlinkMacSystemFont,
+      Helvetica Neue,
+      PingFang SC,
+      Hiragino Sans GB,
+      Microsoft YaHei,
+      Arial;
+  }
+
+  .dark {
+    --primary: 199 8% 86%;
+    --secondary: 199 8% 52%;
+    --tertiary: 199 8% 39%;
+    --typography: 199 8% 78%;
+    --primary-reverse: 199 2% 12%;
+    --secondary-reverse: 199 2% 56%;
+    --tertiary-reverse: 199 2% 69%;
+    --typography-reverse: 199 2% 20%;
+    --border: 199 8% 14%;
+    --background: 199 8% 14%;
+    --body-background: 199 8% 8%;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply relative min-h-dvh bg-body-background text-sm antialiased;
+  }
+}
