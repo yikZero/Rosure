@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <>
-      <header className="sticky inset-x-0 top-0 flex h-16 flex-row items-center justify-between border-b border-border bg-body-background px-5">
+      <header className="sticky inset-x-0 top-0 z-50 flex h-16 flex-row items-center justify-between border-b border-border bg-body-background px-4 md:px-5">
         <Link href="/" className="group flex flex-row items-center gap-2">
           <Logo className="size-8 rounded-md group-hover:opacity-80" />
           <span className="text-sm font-medium text-primary">Rosure</span>

@@ -42,7 +42,7 @@
     --secondary-reverse: 199 2% 56%;
     --tertiary-reverse: 199 2% 69%;
     --typography-reverse: 199 2% 20%;
-    --border: 199 8% 14%;
+    --border: 199 8% 18%;
     --background: 199 8% 14%;
     --body-background: 199 8% 8%;
   }
@@ -52,6 +52,6 @@
   }
 
   body {
-    @apply relative min-h-dvh bg-body-background text-sm antialiased;
+    @apply relative flex min-h-screen flex-col bg-body-background text-sm antialiased;
   }
 }

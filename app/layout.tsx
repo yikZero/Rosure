@@ -24,10 +24,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="flex min-h-dvh flex-row overflow-hidden bg-body-background">
-            <Sidebar />
-            <div className="grow overflow-y-auto p-2">{children}</div>
-          </div>
+          <main className="flex-1">
+            <div className="flex-1 items-start md:grid md:grid-cols-[13rem_minmax(0,1fr)] lg:grid-cols-[13rem_minmax(0,1fr)]">
+              <Sidebar />
+              <div className="relative p-4 md:p-2">{children}</div>
+            </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>
