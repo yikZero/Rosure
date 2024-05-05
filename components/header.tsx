@@ -1,6 +1,6 @@
 import { GithubIcon, Logo } from '@/components/icons';
 import ThemeSwitcher from '@/components/theme-switcher';
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr';
+import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
 import Link from 'next/link';
 
 export default function Header() {
@@ -19,10 +19,7 @@ export default function Header() {
             className="group relative flex items-center justify-center px-2 text-secondary transition-all duration-200 hover:text-primary"
           >
             Contribution
-            <ArrowUpRight
-              size={12}
-              className="absolute -right-1 top-1 text-secondary"
-            />
+            <ArrowUpRightIcon className="absolute -right-1 top-1 size-3 text-secondary" />
           </Link>
           <Link
             href="https://github.com/yikZero/Rosure"

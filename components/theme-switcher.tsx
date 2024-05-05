@@ -1,31 +1,46 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { Moon, Sun } from '@phosphor-icons/react/dist/ssr';
+import { MoonIcon, SunIcon } from '@heroicons/react/16/solid';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 export default function ThemeSwitcher() {
-  const { theme, setTheme } = useTheme();
-  const [themeMode, setThemeMode] = useState<string | undefined>('dark');
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setThemeMode(theme);
-  }, [theme]);
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <>
+        <button
+          aria-label={`Switch to light mode`}
+          className={cn(
+            'flex size-8 items-center justify-center text-secondary transition-all duration-200 hover:text-primary',
+          )}
+        >
+          <SunIcon className="size-4" />
+        </button>
+      </>
+    );
+  }
 
   return (
     <>
       <button
-        aria-label={`Theme to ${theme === 'dark' ? 'Light' : 'Dark'}`}
+        aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
         className={cn(
           'flex size-8 items-center justify-center text-secondary transition-all duration-200 hover:text-primary',
         )}
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       >
-        {theme === 'dark' ? (
-          <Sun size={16} weight="regular" />
+        {resolvedTheme === 'dark' ? (
+          <SunIcon className="size-4" />
         ) : (
-          <Moon size={16} weight="regular" />
+          <MoonIcon className="size-4" />
         )}
       </button>
     </>
