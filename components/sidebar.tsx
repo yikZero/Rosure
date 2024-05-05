@@ -8,11 +8,17 @@ import { usePathname } from 'next/navigation';
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const allCategory = {
+    name: 'All',
+    url: '/',
+    isExternal: false,
+  };
+  const categories = [allCategory, ...allCategories];
   return (
     <>
       <aside className="group/sidebar fixed top-16 z-30 hidden h-[calc(100vh-4rem)] w-full shrink-0 border-r border-border md:sticky md:block">
         <div className="flex size-full flex-col gap-1 p-2">
-          {allCategories.map((category) => {
+          {categories.map((category) => {
             const isActive = category.url === pathname;
             const linkCount = getLinksCountForCategory(
               category.name.toLowerCase(),

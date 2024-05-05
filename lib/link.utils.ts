@@ -10,10 +10,13 @@ export function linkBelongsToCategory(link: iLink, category: string): boolean {
 }
 
 export function getLinksCountForCategory(category: string): number {
-  return allLinks.filter((link) => linkBelongsToCategory(link, category))
-    .length;
+  if (category.toLowerCase() === 'all') {
+    return allLinks.length;
+  } else {
+    return allLinks.filter((link) => linkBelongsToCategory(link, category))
+      .length;
+  }
 }
-
 export function getLinksForCategory(category: string): iLink[] {
   return allLinks.filter((link) => linkBelongsToCategory(link, category));
 }
