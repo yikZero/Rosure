@@ -27,7 +27,7 @@ export default function RootLayout({
           <main className="flex-1">
             <div className="flex-1 items-start md:grid md:grid-cols-[13rem_minmax(0,1fr)] lg:grid-cols-[13rem_minmax(0,1fr)]">
               <Sidebar />
-              <div className="relative p-4 md:p-8">{children}</div>
+              <div className="relative min-h-full p-4 md:p-8">{children}</div>
             </div>
           </main>
         </ThemeProvider>

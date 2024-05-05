@@ -21,6 +21,15 @@ export default function List({ params }: { params: { slug: string } }) {
 
   const categoryLinks = getLinksForCategory(params.slug);
 
+  if (categoryLinks.length == 0)
+    return (
+      <>
+        <div className="mt-12 flex justify-center">
+          <div className="select-none bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-2xl font-medium text-transparent">{`NO CONTENT UNDER "${params.slug.toUpperCase()}"`}</div>
+        </div>
+      </>
+    );
+
   return (
     <>
       <div className="grid grid-cols-5 gap-4">
