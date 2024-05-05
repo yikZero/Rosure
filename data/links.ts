@@ -117,19 +117,19 @@ export const allLinks: iLink[] = [
     url: 'https://etceteratype.co/',
   },
   {
-    title: 'THE LEAGUE OF MOVEABLE TYPE',
+    title: 'LEAGUE OF TYPE',
     description: 'The original, the first, the open-source font foundry.',
     category: 'Fonts',
     url: 'https://www.theleagueofmoveabletype.com/',
   },
   {
-    title: 'Maoken Free commercial Chinese fonts',
+    title: 'Maoken Free fonts',
     description: 'Provides ALLINONE zip and font previews',
     category: 'Fonts',
     url: 'https://www.maoken.com/all-fonts',
   },
   {
-    title: 'uiiiuiii Free commercial Chinese fonts',
+    title: 'uiiiuiii Free fonts',
     description: 'Provides zip and font poster application',
     category: 'Fonts',
     url: 'https://uiiiuiii.com/tool/typeface',
@@ -160,7 +160,7 @@ export const allLinks: iLink[] = [
     url: 'https://ifdesign.com/en/winner-ranking/winner-overview/?awardId=2&disciplineId=20&sort=desc',
   },
   {
-    title: 'Awwwards Winning websites',
+    title: 'Awwwards Winning',
     description: 'Definitive inspiration resource for digital creatives',
     category: 'Inspirations',
     url: 'https://www.awwwards.com/websites/',
@@ -199,7 +199,7 @@ export const allLinks: iLink[] = [
     url: 'https://www.framersections.com',
   },
   {
-    title: 'Stripe Payment Elements',
+    title: 'Stripe Elements',
     description:
       'Stripe Elements is a set of prebuilt UI components for building your web checkout flow.',
     category: 'Inspirations',
@@ -246,7 +246,7 @@ export const allLinks: iLink[] = [
   },
   {
     title: 'Basement',
-    description: 'Basement , Black&Orange/parallax/anime',
+    description: 'Basement  Black & Orange/parallax/anime',
     category: 'Studio',
     url: 'https://basement.studio/',
   },
@@ -278,7 +278,7 @@ export const allLinks: iLink[] = [
   },
   {
     title: 'Marco Cornacchia',
-    description: 'Marco Cornacchia—Designing AI experiences at Figma',
+    description: 'Marco Cornacchia — Designing AI experiences at Figma',
     category: 'Studio',
     url: 'https://www.marco.fyi/',
   },

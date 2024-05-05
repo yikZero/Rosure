@@ -1,6 +1,7 @@
 'use client';
 
 import { allCategories } from '@/data/category';
+import { getLinksCountForCategory } from '@/lib/link.utils';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -13,6 +14,9 @@ export default function Sidebar() {
         <div className="flex size-full flex-col gap-1 p-2">
           {allCategories.map((category) => {
             const isActive = category.url === pathname;
+            const linkCount = getLinksCountForCategory(
+              category.name.toLowerCase(),
+            );
             return (
               <Link
                 href={category.url}
@@ -31,7 +35,7 @@ export default function Sidebar() {
                   {category.name}
                 </span>
                 <span className="rounded-md border border-border px-1 text-xs text-secondary opacity-0 transition-all duration-300 group-hover/sidebar:opacity-100">
-                  123
+                  {linkCount}
                 </span>
               </Link>
             );
