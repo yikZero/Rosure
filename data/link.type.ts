@@ -7,6 +7,7 @@ type CategoryTriple = [tCategory, tCategory, tCategory];
 export interface iLink {
   title: string;
   description: string;
+  feature: string[];
   icon?: StaticImport;
   iconThemed?: {
     light?: StaticImport;

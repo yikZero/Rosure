@@ -42,8 +42,15 @@ export default function LinkCard({ link }: LinkCardProps) {
           <div className="line-clamp-1 items-center text-sm font-medium text-primary">
             {link.title}
           </div>
-          <div className="line-clamp-2 text-center text-sm font-normal text-secondary">
-            {link.description}
+          <div className="flex flex-row gap-1">
+            {link.feature.map((feature, index) => (
+              <div
+                key={index}
+                className="rounded-full border border-border bg-background/30 px-3 text-secondary"
+              >
+                {feature}
+              </div>
+            ))}
           </div>
         </div>
       </Link>

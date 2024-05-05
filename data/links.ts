@@ -62,6 +62,7 @@ export const allLinks: iLink[] = [
     title: 'Untitled UI',
     description:
       'A clean, consistent, and neutral icon library crafted specifically for modern UI design. Made for Figma, in Figma.',
+    feature: ['Figma'],
     category: 'Icons',
     icon: untitleduilogo,
     url: 'https://www.untitledui.com/icons',
@@ -70,6 +71,7 @@ export const allLinks: iLink[] = [
     title: 'Lucide Icons',
     description:
       '1422+ icons · React & Vue libraries · forked from Feather Icons. Official libraries and integrations with popular frameworks and design tools.',
+    feature: ['React', 'Vue'],
     category: 'Icons',
     iconThemed: {
       light: lucidelogolight,
@@ -80,6 +82,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Radix Icons',
     description: '300+ icons · React',
+    feature: ['React'],
     category: 'Icons',
     iconThemed: {
       light: radixlogolight,
@@ -91,6 +94,7 @@ export const allLinks: iLink[] = [
     title: 'IBM Carbon Icon',
     description:
       'A design system built by IBM · Angular & React & Vue & Svelte',
+    feature: ['Multi-platform'],
     category: 'Icons',
     icon: ibmcarbonlogo,
     url: 'https://carbondesignsystem.com/elements/icons/library/',
@@ -99,6 +103,7 @@ export const allLinks: iLink[] = [
     title: 'Hero Icons',
     description:
       '288+ icons · React & Vue libraries · Designed by the makers of Tailwind CSS.',
+    feature: ['Size Customized'],
     category: 'Icons',
     icon: heroiconslogo,
     url: 'https://heroicons.com/',
@@ -106,6 +111,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Remix Icons',
     description: '2736+ icons · React & Vue libraries',
+    feature: ['Multi-platform'],
     category: 'Icons',
     icon: remixiconslogo,
     url: 'https://remixicon.com/',
@@ -113,6 +119,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Phosphor Icons',
     description: '7488+ icons · React & Vue libraries',
+    feature: ['Multi-platform'],
     category: 'Icons',
     icon: phosphoriconslogo,
     url: 'https://phosphoricons.com/',
@@ -120,6 +127,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Polaris Icons',
     description: 'Designed by Shopify',
+    feature: ['React'],
     category: 'Icons',
     icon: polarisiconslogo,
     url: 'https://polaris.shopify.com/icons',
@@ -127,6 +135,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Atlas Icons',
     description: '2700+ icons · React & Vue libraries',
+    feature: ['Multi-platform'],
     category: 'Icons',
     iconThemed: {
       light: atlasiconslogolight,
@@ -137,6 +146,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Chi Icons Treasure',
     description: 'Organize those high-quality icon assets',
+    feature: ['Treasure', 'polymerization'],
     category: 'Icons',
     icon: chiiconslogo,
     url: 'https://uxchi.notion.site/0d118e226bf2439a9641127149b16361?v=4275064af9ab4692bc58a3e72795c770',
@@ -144,6 +154,7 @@ export const allLinks: iLink[] = [
   {
     title: 'IconPark',
     description: '2658+ icons · React & Vue libraries',
+    feature: ['Multi-platform'],
     category: 'Icons',
     icon: iconparklogo,
     url: 'https://iconpark.oceanengine.com/',
@@ -151,6 +162,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Iconfont',
     description: '26,909,769+(Aggregation) icons · Font & SVG',
+    feature: ['Treasure'],
     category: 'Icons',
     icon: iconfontlogo,
     url: 'https://www.iconfont.cn/',
@@ -158,6 +170,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Iconbuddy',
     description: '203,940+(Aggregation) icons The ultimate source for icons.',
+    feature: ['203,940+'],
     category: 'Icons',
     icon: iconbuddylogo,
     url: 'https://iconbuddy.app/',
@@ -165,13 +178,15 @@ export const allLinks: iLink[] = [
   {
     title: 'Google Fonts',
     description: 'Google Fonts are open source and are without cost',
+    feature: ['Open Source', 'Free'],
     category: 'Fonts',
     icon: googlefontlogo,
     url: 'https://fonts.google.com/',
   },
   {
     title: 'Collletttivo',
-    description: 'Open-Source type foundry',
+    description: 'Open-Source',
+    feature: ['Open-Source'],
     category: 'Fonts',
     icon: collletttivologo,
     url: 'https://www.collletttivo.it/',
@@ -180,6 +195,7 @@ export const allLinks: iLink[] = [
     title: 'Tunera',
     description:
       'Transnational type foundry, that aims to present new and original typefaces for everyone',
+    feature: ['Transnational', 'Original'],
     category: 'Fonts',
     icon: tuneralogo,
     url: 'https://www.tunera.xyz/',
@@ -188,6 +204,7 @@ export const allLinks: iLink[] = [
     title: 'FontShare',
     description:
       'Free fonts service launched by the Indian Type Foundry (ITF), 100% free for personal and commercial',
+    feature: ['100% free'],
     category: 'Fonts',
     icon: fontsharelogo,
     url: 'https://www.fontshare.com/',
@@ -196,6 +213,7 @@ export const allLinks: iLink[] = [
     title: 'ETC.',
     description:
       'The short story here is that we love creating beautiful sets of letters',
+    feature: ['letters'],
     category: 'Fonts',
     icon: etclogo,
     url: 'https://etceteratype.co/',
@@ -203,6 +221,7 @@ export const allLinks: iLink[] = [
   {
     title: 'LEAGUE OF TYPE',
     description: 'The original, the first, the open-source font foundry.',
+    feature: ['Open-Source'],
     category: 'Fonts',
     icon: theleagueofmoveabletypelogo,
     url: 'https://www.theleagueofmoveabletype.com/',
@@ -210,6 +229,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Maoken Free fonts',
     description: 'Provides ALLINONE zip and font previews',
+    feature: ['font previews'],
     category: 'Fonts',
     icon: maokenlogo,
     url: 'https://www.maoken.com/all-fonts',
@@ -217,6 +237,7 @@ export const allLinks: iLink[] = [
   {
     title: 'uiiiuiii Free fonts',
     description: 'Provides zip and font poster application',
+    feature: ['zip'],
     category: 'Fonts',
     icon: uiiiuiiilogo,
     url: 'https://uiiiuiii.com/tool/typeface',
@@ -224,6 +245,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Fontmin',
     description: 'Minify font seamlessly, Support NPM or Client',
+    feature: ['Minify'],
     category: 'Fonts',
     icon: fontminlogo,
     url: 'https://github.com/ecomfe/fontmin',
@@ -232,6 +254,7 @@ export const allLinks: iLink[] = [
     title: 'Font Spider Plus',
     description:
       'Automatically compresses the WebFont used on local and online pages',
+    feature: ['Automatic'],
     category: 'Fonts',
     iconThemed: {
       light: githublogolight,
@@ -242,6 +265,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Framer Gallery',
     description: 'Discover the best Framer websites',
+    feature: ['Showcase'],
     category: 'Inspirations',
     iconThemed: {
       light: framerlogolight,
@@ -252,6 +276,7 @@ export const allLinks: iLink[] = [
   {
     title: 'iF Design Award',
     description: "Won IF design awards's User Interface (UI)",
+    feature: ['Award-winning UI'],
     category: 'Inspirations',
     icon: ifdesignlogo,
     url: 'https://ifdesign.com/en/winner-ranking/winner-overview/?awardId=2&disciplineId=20&sort=desc',
@@ -259,6 +284,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Awwwards Winning',
     description: 'Definitive inspiration resource for digital creatives',
+    feature: ['Digital creatives'],
     category: 'Inspirations',
     iconThemed: {
       light: awwwardslogolight,
@@ -269,6 +295,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Layers',
     description: 'A home for designers',
+    feature: ['Designer community'],
     category: 'Inspirations',
     iconThemed: {
       light: layerlogolight,
@@ -279,6 +306,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Mobbin',
     description: "The world's largest mobile and web design library",
+    feature: ['Mobile && web'],
     category: 'Inspirations',
     iconThemed: {
       light: mobbinlogolight,
@@ -290,6 +318,7 @@ export const allLinks: iLink[] = [
     title: 'Appinspo',
     description:
       'This is the place where to find the freshest app visual interface design inspiration',
+    feature: ['freshest'],
     icon: appinspologo,
     category: 'Inspirations',
     url: 'https://www.appinspo.com/',
@@ -298,6 +327,7 @@ export const allLinks: iLink[] = [
     title: 'LEXINGTON',
     description:
       'Lexington Themes provides Astro.js and Tailwind themes for various purposes, including design, development, business, and personal use.',
+    feature: ['Astro', 'Tailwind'],
     category: 'Inspirations',
     icon: lexingtonlogo,
     url: 'https://lexingtonthemes.com/',
@@ -306,6 +336,7 @@ export const allLinks: iLink[] = [
     title: 'Framer Sections',
     description:
       'Launch your next site in minutes, not months. A huge collection of framer sections for your next project.',
+    feature: ['collection', 'development'],
     category: 'Inspirations',
     iconThemed: {
       light: framersectionslogolight,
@@ -317,6 +348,7 @@ export const allLinks: iLink[] = [
     title: 'Stripe Elements',
     description:
       'Stripe Elements is a set of prebuilt UI components for building your web checkout flow.',
+    feature: ['Web checkout flow'],
     category: 'Inspirations',
     icon: stripelogo,
     url: 'https://docs.stripe.com/payments/elements',
@@ -325,6 +357,7 @@ export const allLinks: iLink[] = [
     title: 'Deck.Gallery®',
     description:
       'We curate beautifully designed decks, slides, keynotes, guidelines — or whatever you call them.',
+    feature: ['presentation'],
     category: 'Inspirations',
     icon: deckgallerylogo,
     url: 'https://www.deck.gallery/',
@@ -333,6 +366,7 @@ export const allLinks: iLink[] = [
     title: 'Navbar Kit',
     description:
       'A navigation library with access to the entire 300+ navbar kit, dark/light themes, and more.',
+    feature: ['300+', 'navbars'],
     category: 'Inspirations',
     icon: navbarkitlogo,
     url: 'https://navbars.framer.website',
@@ -340,6 +374,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Dark Design',
     description: 'Curated websites from the dark side',
+    feature: ['Dark-themed'],
     category: 'Inspirations',
     icon: darkdesignlogo,
     url: 'https://www.dark.design/',
@@ -347,6 +382,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Chi Inspirations',
     description: 'Organize those high-quality Inspirations',
+    feature: ['Organized'],
     category: 'Inspirations',
     icon: chiinspirationslogo,
     url: 'https://uxchi.notion.site/UI-Inspiration-881b4c0179a74935a3f607ad3521cdb5',
@@ -355,6 +391,7 @@ export const allLinks: iLink[] = [
     title: 'UI Notes',
     description:
       'collects excellent App UI screenshots, only the landing design',
+    feature: ['App UI screenshots'],
     category: 'Inspirations',
     icon: uinoteslogo,
     url: 'https://uinotes.com/',
@@ -362,13 +399,15 @@ export const allLinks: iLink[] = [
   {
     title: '美叶',
     description: 'Premium Design Content Recommendation Platform',
+    feature: ['design content'],
     category: 'Inspirations',
     icon: meiyelogo,
     url: 'https://www.meiye.art/',
   },
   {
     title: 'Basement',
-    description: 'Basement  Black & Orange/parallax/anime',
+    description: 'Basement Black & Orange/parallax/anime',
+    feature: ['Parallax'],
     category: 'Studio',
     icon: basementlogo,
     url: 'https://basement.studio/',
@@ -376,6 +415,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Patrick David',
     description: 'Award-winning UX/UI Designer, Vivid animation',
+    feature: ['Award', 'animation'],
     category: 'Studio',
     icon: patrickdavidlogo,
     url: 'https://patrickdavid.com/',
@@ -384,6 +424,7 @@ export const allLinks: iLink[] = [
     title: 'Newpeace',
     description:
       'The ultimate use of lines, the best presentation of design. Develop software for brand development',
+    feature: ['Ultimate', 'Brand'],
     category: 'Studio',
     icon: newspacelogo,
     url: 'https://newpeace.jp/',
@@ -392,6 +433,7 @@ export const allLinks: iLink[] = [
     title: 'Visual Journal',
     description:
       "Scarpellini's Blog, show the best branding and graphic design projects from all over the world",
+    feature: ['Showcase'],
     category: 'Studio',
     icon: visualjournallogo,
     url: 'https://visualjournal.it/',
@@ -399,6 +441,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Shiryoku',
     description: 'Simplicity Portfolio, framer',
+    feature: ['Simplicity'],
     category: 'Studio',
     icon: shiryokulogo,
     url: 'https://shiryoku.framer.website/',
@@ -406,6 +449,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Marco Cornacchia',
     description: 'Marco Cornacchia — Designing AI experiences at Figma',
+    feature: ['Simplicity', 'Portfolio'],
     category: 'Studio',
     icon: marcologo,
     url: 'https://www.marco.fyi/',
@@ -413,6 +457,7 @@ export const allLinks: iLink[] = [
   {
     title: 'yasmin p.',
     description: 'Interactive 3D scene, Nextjs, GamePlay',
+    feature: ['3D', 'GamePlay'],
     category: 'Studio',
     icon: yasminslogo,
     url: 'https://www.yasmins.site/',
@@ -420,6 +465,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Garryui',
     description: 'Cocos creator',
+    feature: ['3D', 'GamePlay'],
     category: 'Studio',
     icon: garryuilogo,
     url: 'https://garryui.cn/',
@@ -427,6 +473,7 @@ export const allLinks: iLink[] = [
   {
     title: 'Florian',
     description: 'Florian, Design Engineer, Simplicity',
+    feature: ['Simplicity'],
     category: 'Studio',
     icon: florianlogo,
     url: 'https://floriankiem.com/',
@@ -435,6 +482,7 @@ export const allLinks: iLink[] = [
     title: 'Buttermax',
     description:
       'Designed by Buttermaxstudio, The gold standard for buttery-smooth digital production',
+    feature: ['Simplicity'],
     category: 'Studio',
     icon: buttermaxlogo,
     url: 'https://buttermax.net/',
