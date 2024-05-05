@@ -25,7 +25,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="group flex size-8 items-center justify-center"
           >
-            <GithubIcon className="size-5 text-secondary transition-all duration-200 group-hover:text-primary" />
+            <GithubIcon className="size-4 text-secondary transition-all duration-200 group-hover:text-primary" />
           </Link>
           <ThemeSwitcher />
         </div>
