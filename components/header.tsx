@@ -1,5 +1,6 @@
 import { GithubIcon, Logo } from '@/components/icons';
 import ThemeSwitcher from '@/components/theme-switcher';
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr';
 import Link from 'next/link';
 
 export default function Header() {
@@ -15,9 +16,13 @@ export default function Header() {
             href="https://github.com/yikZero/Rosure"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center px-2 text-secondary transition-all duration-200 hover:text-primary"
+            className="group relative flex items-center justify-center px-2 text-secondary transition-all duration-200 hover:text-primary"
           >
             Contribution
+            <ArrowUpRight
+              size={12}
+              className="absolute -right-1 top-1 text-secondary"
+            />
           </Link>
           <Link
             href="https://github.com/yikZero/Rosure"
