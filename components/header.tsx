@@ -1,7 +1,9 @@
 import { GithubIcon, Logo } from '@/components/icons';
+import Search from '@/components/search';
 import ThemeSwitcher from '@/components/theme-switcher';
 import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
 import Link from 'next/link';
+import { Suspense } from 'react';
 
 export default function Header() {
   return (
@@ -12,6 +14,9 @@ export default function Header() {
           <span className="text-sm font-medium text-primary">Rosure</span>
         </Link>
         <div className="flex flex-row gap-3">
+          <Suspense>
+            <Search placeholder="Search Something" />
+          </Suspense>
           <Link
             href="https://github.com/yikZero/Rosure"
             target="_blank"
