@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <div className="max-w-main flex min-h-dvh items-center justify-center">
       <svg
-        className="mb-48 size-6 animate-spin text-brand-600"
+        className="mb-48 size-6 animate-spin text-primary"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
