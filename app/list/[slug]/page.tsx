@@ -2,7 +2,6 @@ import LinkCard from '@/components/link-card';
 import { allCategories } from '@/data/category';
 import { getLinksForCategory } from '@/lib/link.utils';
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
