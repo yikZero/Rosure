@@ -1,3 +1,5 @@
+'use client';
+
 import { iLink } from '@/data/link.type';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -42,11 +44,14 @@ export default function LinkCard({ link }: LinkCardProps) {
           <div className="line-clamp-1 items-center text-sm font-medium text-primary">
             {link.title}
           </div>
-          <div className="flex flex-row gap-1">
+          <div className="line-clamp-2 items-center text-sm font-normal text-secondary sm:hidden">
+            {link.description}
+          </div>
+          <div className="hidden flex-row gap-1 sm:flex">
             {link.feature.map((feature, index) => (
               <div
                 key={index}
-                className="rounded-full border border-border bg-background/30 px-3 text-secondary"
+                className="self-center text-nowrap rounded-full border border-border bg-background/30 px-3 text-xs font-medium text-secondary"
               >
                 {feature}
               </div>
