@@ -4,6 +4,7 @@ import { XCircleIcon } from '@heroicons/react/20/solid';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
+import { useDebouncedCallback } from 'use-debounce';
 
 export default function Search({ placeholder }: { placeholder: string }) {
   const searchParams = useSearchParams();
@@ -14,7 +15,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     searchParams.get('query')?.toString() || '',
   );
 
-  function handleSearch(term: string) {
+  const handleSearch = useDebouncedCallback((term: string) => {
     const params = new URLSearchParams(searchParams);
     if (term) {
       params.set('query', term);
@@ -23,7 +24,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
       params.delete('query');
       replace(originalPathname || pathname);
     }
-  }
+  }, 300);
 
   function handleInputFocus() {
     setOriginalPathname(pathname);
