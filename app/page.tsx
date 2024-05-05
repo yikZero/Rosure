@@ -15,7 +15,7 @@ export default function Home({
   return (
     <>
       {filteredLinks.length > 0 ? (
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {filteredLinks.map((link, index) => (
             <LinkCard key={index} link={link} />
           ))}

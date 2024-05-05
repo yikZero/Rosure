@@ -32,7 +32,7 @@ export default function List({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 md:grid-cols-5">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {categoryLinks.map((link, index) => (
           <LinkCard key={index} link={link} />
         ))}
