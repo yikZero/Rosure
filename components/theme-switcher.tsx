@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
             'flex size-8 items-center justify-center text-secondary transition-all duration-200 hover:text-primary',
           )}
         >
-          <SunIcon className="size-4" />
+          <MoonIcon className="size-4" />
         </button>
       </>
     );
@@ -38,9 +38,9 @@ export default function ThemeSwitcher() {
         onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       >
         {resolvedTheme === 'dark' ? (
-          <SunIcon className="size-4" />
-        ) : (
           <MoonIcon className="size-4" />
+        ) : (
+          <SunIcon className="size-4" />
         )}
       </button>
     </>
