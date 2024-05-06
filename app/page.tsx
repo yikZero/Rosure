@@ -45,7 +45,7 @@ export default function Home({
         </div>
       ) : (
         <div className="mt-12 flex justify-center">
-          <div className="select-none bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-2xl font-medium text-transparent">{`NO RESULT ABOUT "${query}"`}</div>
+          <div className="select-none bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-xl font-medium text-transparent sm:text-2xl">{`NO RESULT ABOUT "${query}"`}</div>
         </div>
       )}
     </>

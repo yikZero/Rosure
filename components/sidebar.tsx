@@ -16,7 +16,7 @@ export default function Sidebar() {
   const categories = [allCategory, ...allCategories];
   return (
     <>
-      <aside className="group/sidebar sticky top-16 z-30 w-full shrink-0 border-r border-border bg-body-background md:block md:h-[calc(100vh-4rem)]">
+      <aside className="group/sidebar sticky top-16 z-30 w-full shrink-0 border-b border-border bg-body-background md:block md:h-[calc(100vh-4rem)] md:border-r">
         <div className="flex size-full flex-row  gap-1 overflow-x-scroll p-2 md:flex-col">
           {categories.map((category) => {
             const isActive = category.url === pathname;
