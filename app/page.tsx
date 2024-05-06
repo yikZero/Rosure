@@ -1,4 +1,5 @@
 import LinkCard from '@/components/link-card';
+import { allCategories } from '@/data/category';
 import { allLinks } from '@/data/links';
 
 export default function Home({
@@ -12,12 +13,34 @@ export default function Home({
     link.title.toLowerCase().includes(query),
   );
 
+  const linksByCategory = allCategories.reduce(
+    (acc, category) => {
+      const links = filteredLinks.filter(
+        (link) => link.category === category.name,
+      );
+      if (links.length > 0) {
+        acc[category.name] = links;
+      }
+      return acc;
+    },
+    {} as { [key: string]: typeof allLinks },
+  );
+
   return (
     <>
-      {filteredLinks.length > 0 ? (
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {filteredLinks.map((link, index) => (
-            <LinkCard key={index} link={link} />
+      {Object.keys(linksByCategory).length > 0 ? (
+        <div className="space-y-8">
+          {Object.entries(linksByCategory).map(([category, links]) => (
+            <div key={category}>
+              <h2 className="sticky top-16 select-none text-base font-semibold text-primary mix-blend-difference sm:text-lg">
+                {category}
+              </h2>
+              <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                {links.map((link, index) => (
+                  <LinkCard key={`${category}-${index}`} link={link} />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       ) : (
