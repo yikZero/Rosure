@@ -20,12 +20,14 @@ export default function LinkCard({ link }: LinkCardProps) {
         {link.iconThemed?.light && link.iconThemed?.dark ? (
           <>
             <Image
+              style={{ transform: 'translate3d(0, 0, 0)' }}
               src={link.iconThemed.light}
               alt="wechat qrcode"
               placeholder="blur"
               className="block size-8 rounded-lg object-cover dark:hidden"
             />
             <Image
+              style={{ transform: 'translate3d(0, 0, 0)' }}
               src={link.iconThemed.dark}
               alt="wechat qrcode"
               placeholder="blur"
@@ -34,6 +36,7 @@ export default function LinkCard({ link }: LinkCardProps) {
           </>
         ) : link.icon ? (
           <Image
+            style={{ transform: 'translate3d(0, 0, 0)' }}
             src={link.icon}
             alt="wechat qrcode"
             placeholder="blur"
