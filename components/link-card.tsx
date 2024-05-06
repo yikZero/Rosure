@@ -43,7 +43,7 @@ export default function LinkCard({ link }: LinkCardProps) {
               className="size-8 rounded-lg object-cover"
             />
           ) : null}
-          <div className="flex flex-col items-center gap-1">
+          <div className="flex flex-col items-center gap-1.5">
             <div className="line-clamp-1 items-center text-sm font-medium text-primary">
               {link.title}
             </div>

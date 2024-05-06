@@ -54,6 +54,8 @@ import tuneralogo from '@/public/logo/tunera-logo.png';
 import uiiiuiiilogo from '@/public/logo/uiiiuiii-logo.png';
 import uinoteslogo from '@/public/logo/uinotes-logo.png';
 import untitleduilogo from '@/public/logo/untitledui-logo.png';
+import v0logodark from '@/public/logo/v0-logo-dark.png';
+import v0logolight from '@/public/logo/v0-logo-light.png';
 import visualjournallogo from '@/public/logo/visualjournal-logo.png';
 import yasminslogo from '@/public/logo/yasmins-logo.png';
 
@@ -185,17 +187,16 @@ export const allLinks: iLink[] = [
   },
   {
     title: 'Collletttivo',
-    description: 'Open-Source',
-    feature: ['Open-Source'],
+    description: 'Collletttivo is an Open-Source type foundry.',
+    feature: ['Open Source'],
     category: 'Fonts',
     icon: collletttivologo,
     url: 'https://www.collletttivo.it/',
   },
   {
     title: 'Tunera',
-    description:
-      'Transnational type foundry, that aims to present new and original typefaces for everyone',
-    feature: ['Transnational', 'Original'],
+    description: 'present new and original typefaces for everyone',
+    feature: ['Transnational'],
     category: 'Fonts',
     icon: tuneralogo,
     url: 'https://www.tunera.xyz/',
@@ -220,8 +221,8 @@ export const allLinks: iLink[] = [
   },
   {
     title: 'LEAGUE OF TYPE',
-    description: 'The original, the first, the open-source font foundry.',
-    feature: ['Open-Source'],
+    description: 'The original, the first, the Open Source font foundry.',
+    feature: ['Open Source'],
     category: 'Fonts',
     icon: theleagueofmoveabletypelogo,
     url: 'https://www.theleagueofmoveabletype.com/',
@@ -348,7 +349,7 @@ export const allLinks: iLink[] = [
     title: 'Stripe Elements',
     description:
       'Stripe Elements is a set of prebuilt UI components for building your web checkout flow.',
-    feature: ['Web checkout flow'],
+    feature: ['prebuilt UI'],
     category: 'Inspirations',
     icon: stripelogo,
     url: 'https://docs.stripe.com/payments/elements',
@@ -391,7 +392,7 @@ export const allLinks: iLink[] = [
     title: 'UI Notes',
     description:
       'collects excellent App UI screenshots, only the landing design',
-    feature: ['App UI screenshots'],
+    feature: ['implemented'],
     category: 'Inspirations',
     icon: uinoteslogo,
     url: 'https://uinotes.com/',
@@ -486,5 +487,17 @@ export const allLinks: iLink[] = [
     category: 'Studio',
     icon: buttermaxlogo,
     url: 'https://buttermax.net/',
+  },
+  {
+    title: 'v0 by Vercel',
+    description:
+      'v0 is a generative user interface system by Vercel powered by AI',
+    feature: ['shadcn/ui', 'Tailwind'],
+    category: 'AI',
+    iconThemed: {
+      light: v0logolight,
+      dark: v0logodark,
+    },
+    url: 'https://v0.dev/',
   },
 ];
