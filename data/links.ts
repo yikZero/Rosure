@@ -68,6 +68,7 @@ export const allLinks: iLink[] = [
     category: 'Icons',
     icon: untitleduilogo,
     url: 'https://www.untitledui.com/icons',
+    isFavorite: true,
   },
   {
     title: 'Lucide Icons',
@@ -109,6 +110,7 @@ export const allLinks: iLink[] = [
     category: 'Icons',
     icon: heroiconslogo,
     url: 'https://heroicons.com/',
+    isFavorite: true,
   },
   {
     title: 'Remix Icons',
@@ -117,6 +119,7 @@ export const allLinks: iLink[] = [
     category: 'Icons',
     icon: remixiconslogo,
     url: 'https://remixicon.com/',
+    isFavorite: true,
   },
   {
     title: 'Phosphor Icons',
@@ -314,6 +317,7 @@ export const allLinks: iLink[] = [
       dark: mobbinlogodark,
     },
     url: 'https://mobbin.com/browse/ios/apps',
+    isFavorite: true,
   },
   {
     title: 'Appinspo',
@@ -404,6 +408,7 @@ export const allLinks: iLink[] = [
     category: 'Inspirations',
     icon: meiyelogo,
     url: 'https://www.meiye.art/',
+    isFavorite: true,
   },
   {
     title: 'Basement',

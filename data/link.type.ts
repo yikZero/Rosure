@@ -15,4 +15,5 @@ export interface iLink {
   };
   category: tCategory | CategoryPair | CategoryTriple;
   url: string;
+  isFavorite?: boolean;
 }
