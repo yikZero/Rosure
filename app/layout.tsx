@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Sidebar from '@/components/sidebar';
 import type { Metadata } from 'next';
@@ -30,6 +31,7 @@ export default function RootLayout({
               <div className="relative min-h-full p-4 md:p-8">{children}</div>
             </div>
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
