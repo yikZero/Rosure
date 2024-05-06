@@ -55,21 +55,3 @@
     @apply relative flex min-h-screen flex-col overflow-y-scroll bg-body-background text-sm antialiased;
   }
 }
-
-@layer components {
-  ::-webkit-scrollbar {
-    @apply h-1.5 w-1.5;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-background;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-tertiary;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-secondary;
-  }
-}

@@ -16,8 +16,8 @@ export default function Sidebar() {
   const categories = [allCategory, ...allCategories];
   return (
     <>
-      <aside className="group/sidebar fixed top-16 z-30 hidden h-[calc(100vh-4rem)] w-full shrink-0 border-r border-border md:sticky md:block">
-        <div className="flex size-full flex-col gap-1 p-2">
+      <aside className="group/sidebar sticky top-16 z-30 w-full shrink-0 border-r border-border bg-body-background md:block md:h-[calc(100vh-4rem)]">
+        <div className="flex size-full flex-row  gap-1 overflow-x-scroll p-2 md:flex-col">
           {categories.map((category) => {
             const isActive = category.url === pathname;
             const linkCount = getLinksCountForCategory(
@@ -28,7 +28,7 @@ export default function Sidebar() {
                 href={category.url}
                 key={category.url}
                 className={cn(
-                  'group flex flex-row items-center justify-between rounded-md py-2.5 pl-3 pr-2 transition-all duration-200',
+                  'group flex flex-row items-center justify-between rounded-md px-3 py-1.5 transition-all duration-200 md:py-2.5 md:pl-3 md:pr-2',
                   isActive && 'bg-background',
                 )}
               >
@@ -40,7 +40,7 @@ export default function Sidebar() {
                 >
                   {category.name}
                 </span>
-                <span className="rounded-md border border-border px-1 text-xs text-secondary opacity-0 transition-all duration-300 group-hover/sidebar:opacity-100">
+                <span className="hidden rounded-md border border-border px-1 text-xs text-secondary opacity-0 transition-all duration-300 group-hover/sidebar:opacity-100 md:block">
                   {linkCount}
                 </span>
               </Link>

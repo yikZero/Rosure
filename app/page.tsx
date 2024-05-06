@@ -32,7 +32,7 @@ export default function Home({
         <div className="space-y-8">
           {Object.entries(linksByCategory).map(([category, links]) => (
             <div key={category}>
-              <h2 className="sticky top-16 select-none text-base font-semibold text-primary mix-blend-difference sm:text-lg">
+              <h2 className="sticky top-[7.375rem] select-none text-base font-semibold text-primary mix-blend-difference sm:text-lg md:top-16">
                 {category}
               </h2>
               <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
