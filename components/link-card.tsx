@@ -1,5 +1,3 @@
-'use client';
-
 import { iLink } from '@/data/link.type';
 import Image from 'next/image';
 import Link from 'next/link';
