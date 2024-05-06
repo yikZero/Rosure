@@ -31,7 +31,7 @@ export default function MobileNav() {
                     href="https://github.com/yikZero/Rosure"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative flex items-center justify-center px-2 text-secondary transition-all duration-200 hover:text-primary"
+                    className="group relative flex items-center justify-center p-2 text-base text-secondary transition-all duration-200 hover:text-primary"
                   >
                     Contribution
                     <ArrowUpRightIcon className="absolute -right-1 top-1 size-3 text-secondary" />
@@ -41,9 +41,9 @@ export default function MobileNav() {
                       href="https://github.com/yikZero/Rosure"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex size-8 items-center justify-center"
+                      className="group flex size-10 items-center justify-center"
                     >
-                      <GithubIcon className="size-4 text-secondary transition-all duration-200 group-hover:text-primary" />
+                      <GithubIcon className="size-5 text-secondary transition-all duration-200 group-hover:text-primary" />
                     </Link>
                     <ThemeSwitcher />
                   </div>

@@ -19,10 +19,10 @@ export default function ThemeSwitcher() {
         <button
           aria-label={`Switch to light mode`}
           className={cn(
-            'flex size-8 items-center justify-center text-secondary transition-all duration-200 hover:text-primary',
+            'flex size-10 items-center justify-center text-secondary transition-all duration-200 hover:text-primary sm:size-8',
           )}
         >
-          <MoonIcon className="size-4" />
+          <MoonIcon className="size-5 sm:size-4" />
         </button>
       </>
     );
@@ -33,14 +33,14 @@ export default function ThemeSwitcher() {
       <button
         aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
         className={cn(
-          'flex size-8 items-center justify-center text-secondary transition-all duration-200 hover:text-primary',
+          'flex size-10 items-center justify-center text-secondary transition-all duration-200 hover:text-primary sm:size-8',
         )}
         onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       >
         {resolvedTheme === 'dark' ? (
-          <MoonIcon className="size-4" />
+          <MoonIcon className="size-5 sm:size-4" />
         ) : (
-          <SunIcon className="size-4" />
+          <SunIcon className="size-5 sm:size-4" />
         )}
       </button>
     </>
