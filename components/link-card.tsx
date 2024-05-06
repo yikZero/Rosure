@@ -44,7 +44,7 @@ export default function LinkCard({ link }: LinkCardProps) {
           <div className="line-clamp-1 items-center text-sm font-medium text-primary">
             {link.title}
           </div>
-          <div className="line-clamp-2 items-center text-sm font-normal text-secondary sm:hidden">
+          <div className="line-clamp-2 items-center text-center text-sm font-normal text-secondary sm:hidden">
             {link.description}
           </div>
           <div className="hidden flex-row gap-1 sm:flex">
