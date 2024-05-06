@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <>
       <aside className="group/sidebar sticky top-16 z-30 w-full shrink-0 border-b border-border bg-body-background md:block md:h-[calc(100vh-4rem)] md:border-r">
-        <div className="flex size-full flex-row  gap-1 overflow-x-scroll p-2 md:flex-col">
+        <div className="flex size-full flex-row gap-1 overflow-x-scroll px-4 py-2 md:flex-col md:p-2">
           {categories.map((category) => {
             const isActive = category.url === pathname;
             const linkCount = getLinksCountForCategory(
