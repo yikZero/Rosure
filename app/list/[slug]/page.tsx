@@ -1,4 +1,5 @@
 import LinkCard from '@/components/link-card';
+import ScrollTop from '@/components/scroll-top';
 import { allCategories } from '@/data/category';
 import { getLinksForCategory } from '@/lib/link.utils';
 import type { Metadata } from 'next';
@@ -32,6 +33,7 @@ export default function List({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <ScrollTop />
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {categoryLinks.map((link, index) => (
           <LinkCard key={index} link={link} />
