@@ -9,9 +9,9 @@ export default function Header() {
   return (
     <>
       <header className="sticky inset-x-0 top-0 z-50 flex h-16 flex-row items-center justify-between gap-8 border-b border-border bg-body-background px-4 md:px-5">
-        <Link href="/" className="group flex flex-row items-center gap-2">
-          <Logo className="size-8 rounded-md group-hover:opacity-80" />
-          <span className="hidden text-sm font-medium text-primary sm:block">
+        <Link href="/" className="group flex flex-row gap-2">
+          <Logo className="size-7 text-brand-500 transition-all duration-300 group-hover:opacity-80" />
+          <span className="hidden self-end text-sm font-semibold text-primary sm:block">
             Rosure
           </span>
         </Link>

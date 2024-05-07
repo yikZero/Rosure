@@ -1,127 +1,16 @@
 export const Logo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 32 32"
+    viewBox="0 0 24 24"
     fill="none"
     {...props}
   >
-    <path fill="url(#a)" d="M0 0h32v32H0z" />
-    <g filter="url(#b)">
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M15.523 23.814a8 8 0 1 1 0-15.628 8.003 8.003 0 0 0 0 15.628"
-        fill="url(#c)"
-      />
-    </g>
-    <g filter="url(#d)">
-      <circle cx={18.596} cy={16} r={8} fill="url(#e)" />
-    </g>
-    <defs>
-      <linearGradient
-        id="a"
-        x1={16}
-        y1={0}
-        x2={16}
-        y2={32}
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#2D3C5C" />
-        <stop offset={1} stopColor="#111827" />
-      </linearGradient>
-      <linearGradient
-        id="c"
-        x1={23.319}
-        y1={8}
-        x2={23.319}
-        y2={24}
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#fff" />
-        <stop offset={1} stopColor="#fff" stopOpacity={0.9} />
-      </linearGradient>
-      <linearGradient
-        id="e"
-        x1={24.72}
-        y1={8}
-        x2={24.72}
-        y2={24}
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#fff" />
-        <stop offset={1} stopColor="#fff" stopOpacity={0.9} />
-      </linearGradient>
-      <filter
-        id="b"
-        x={2.244}
-        y={5.333}
-        width={16.834}
-        height={23.111}
-        filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
-      >
-        <feFlood floodOpacity={0} result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        />
-        <feOffset dy={0.889} />
-        <feGaussianBlur stdDeviation={1.778} />
-        <feColorMatrix values="0 0 0 0 0.176471 0 0 0 0 0.235294 0 0 0 0 0.360784 0 0 0 0.5 0" />
-        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_601_30" />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_601_30"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        />
-        <feOffset dy={-1.778} />
-        <feGaussianBlur stdDeviation={2.667} />
-        <feComposite in2="hardAlpha" operator="arithmetic" k2={-1} k3={1} />
-        <feColorMatrix values="0 0 0 0 0.176471 0 0 0 0 0.235294 0 0 0 0 0.360784 0 0 0 0.12 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_601_30" />
-      </filter>
-      <filter
-        id="d"
-        x={7.04}
-        y={5.333}
-        width={23.111}
-        height={23.111}
-        filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
-      >
-        <feFlood floodOpacity={0} result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        />
-        <feOffset dy={0.889} />
-        <feGaussianBlur stdDeviation={1.778} />
-        <feColorMatrix values="0 0 0 0 0.176471 0 0 0 0 0.235294 0 0 0 0 0.360784 0 0 0 0.5 0" />
-        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_601_30" />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow_601_30"
-          result="shape"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        />
-        <feOffset dy={-1.778} />
-        <feGaussianBlur stdDeviation={2.667} />
-        <feComposite in2="hardAlpha" operator="arithmetic" k2={-1} k3={1} />
-        <feColorMatrix values="0 0 0 0 0.176471 0 0 0 0 0.235294 0 0 0 0 0.360784 0 0 0 0.12 0" />
-        <feBlend in2="shape" result="effect2_innerShadow_601_30" />
-      </filter>
-    </defs>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M0 9.6c0-3.36 0-5.04.654-6.324A6 6 0 0 1 3.276.654C4.56 0 6.24 0 9.6 0h4.8c3.36 0 5.04 0 6.324.654a6 6 0 0 1 2.622 2.622C24 4.56 24 6.24 24 9.6v4.8c0 3.36 0 5.04-.654 6.324a6 6 0 0 1-2.622 2.622C19.44 24 17.76 24 14.4 24H9.6c-3.36 0-5.04 0-6.324-.654a6 6 0 0 1-2.622-2.622C0 19.44 0 17.76 0 14.4zm7.573-4.82c-.79-.69-1.958-.832-2.865-.057-.981.838-1.124 2.25-.348 3.248.295.38.87.948 1.422 1.47a63 63 0 0 0 1.391 1.27l.005.004c.026.023.058.051.09.075a.51.51 0 0 0 .611 0l.088-.075.005-.005c.275-.243.833-.742 1.392-1.27.552-.52 1.127-1.09 1.421-1.469a2.333 2.333 0 0 0-.351-3.251c-.917-.762-2.073-.63-2.861.06m9.608-.58H15.67c-.272 0-.496 0-.679.015a1.4 1.4 0 0 0-.528.132 1.35 1.35 0 0 0-.59.59 1.4 1.4 0 0 0-.132.528c-.015.183-.015.407-.015.679v4.469a.337.337 0 0 0 .505.293l2.195-1.255 2.195 1.255a.337.337 0 0 0 .505-.293v-4.47c0-.271 0-.495-.015-.678a1.4 1.4 0 0 0-.132-.528 1.35 1.35 0 0 0-.59-.59 1.4 1.4 0 0 0-.528-.132c-.183-.015-.407-.015-.679-.015m-.482 8.738a.67.67 0 0 0-.548 0 .7.7 0 0 0-.284.252 4 4 0 0 0-.194.317l-2.79 4.82c-.071.122-.136.233-.18.327a.7.7 0 0 0-.076.372c.02.19.12.364.274.476.12.087.255.11.36.12s.232.01.374.01h5.58c.142 0 .27 0 .373-.01a.7.7 0 0 0 .361-.12.68.68 0 0 0 .274-.476.7.7 0 0 0-.077-.372c-.043-.094-.108-.205-.179-.328l-2.79-4.819a4 4 0 0 0-.194-.317.7.7 0 0 0-.284-.252m-7.883.024c.072.06.152.14.238.226l1.755 1.755c.087.087.167.167.226.238a.7.7 0 0 1 .16.307.68.68 0 0 1-.097.505.7.7 0 0 1-.262.225c-.082.045-.187.09-.299.137l-.854.367-.035.015h-.001l-.027.028-.527.526-.042.043H9.05v.002l-.013.059-.25 1.25c-.03.15-.056.283-.087.387a.7.7 0 0 1-.198.343.68.68 0 0 1-.54.164.7.7 0 0 1-.355-.176 5 5 0 0 1-.287-.273l-.968-.967-1.67 1.67a.338.338 0 0 1-.478-.477l1.67-1.67-.967-.968a5 5 0 0 1-.273-.287.7.7 0 0 1-.175-.355.68.68 0 0 1 .164-.54.7.7 0 0 1 .342-.198c.105-.031.238-.058.387-.088l1.25-.25.06-.012h.001l.043-.043.527-.527.027-.027v-.001l.016-.035.366-.855c.048-.112.093-.216.137-.298a.7.7 0 0 1 .226-.263.68.68 0 0 1 .504-.097.7.7 0 0 1 .307.16"
+      fill="currentColor"
+    />
   </svg>
 );
 

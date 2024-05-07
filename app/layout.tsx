@@ -1,14 +1,23 @@
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Sidebar from '@/components/sidebar';
+import type { Viewport } from 'next';
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
 
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Rosure',
+  title: 'Rosure - Hamster Plan',
   description: 'Collection of Icons, Fonts, Libraries, etc.',
+  keywords: 'Rosure,Collection,Icons,Fonts,Libraries,yikZero,Design',
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FCFCFC' },
+    { media: '(prefers-color-scheme: dark)', color: '#131516' },
+  ],
 };
 
 export default function RootLayout({
