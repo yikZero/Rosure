@@ -1,5 +1,4 @@
 import { tCategory } from '@/data/category.type';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 type CategoryPair = [tCategory, tCategory];
 type CategoryTriple = [tCategory, tCategory, tCategory];
@@ -8,10 +7,10 @@ export interface iLink {
   title: string;
   description: string;
   feature: string[];
-  icon?: StaticImport;
+  icon?: string;
   iconThemed?: {
-    light?: StaticImport;
-    dark?: StaticImport;
+    light?: string;
+    dark?: string;
   };
   category: tCategory | CategoryPair | CategoryTriple;
   url: string;

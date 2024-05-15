@@ -1,63 +1,4 @@
-import { iLink } from '@/data/link.type';
-import appinspologo from '@/public/logo/appinspo-logo.png';
-import atlasiconslogodark from '@/public/logo/atlasicons-logo-dark.png';
-import atlasiconslogolight from '@/public/logo/atlasicons-logo-light.png';
-import awwwardslogodark from '@/public/logo/awwwards-logo-dark.png';
-import awwwardslogolight from '@/public/logo/awwwards-logo-light.png';
-import basementlogo from '@/public/logo/basement-logo.png';
-import buttermaxlogo from '@/public/logo/buttermax-logo.png';
-import chiiconslogo from '@/public/logo/chiicons-logo.png';
-import chiinspirationslogo from '@/public/logo/chiinspirations-logo.png';
-import collletttivologo from '@/public/logo/collletttivo-logo.png';
-import darkdesignlogo from '@/public/logo/darkdesign-logo.png';
-import deckgallerylogo from '@/public/logo/deckgallery-logo.png';
-import etclogo from '@/public/logo/etc-logo.png';
-import florianlogo from '@/public/logo/florian-logo.png';
-import fontminlogo from '@/public/logo/fontmin-logo.png';
-import fontsharelogo from '@/public/logo/fontshare-logo.png';
-import framerlogodark from '@/public/logo/framer-logo-dark.png';
-import framerlogolight from '@/public/logo/framer-logo-light.png';
-import framersectionslogodark from '@/public/logo/framersections-logo-dark.png';
-import framersectionslogolight from '@/public/logo/framersections-logo-light.png';
-import garryuilogo from '@/public/logo/garryui-logo.png';
-import githublogodark from '@/public/logo/github-logo-dark.png';
-import githublogolight from '@/public/logo/github-logo-light.png';
-import googlefontlogo from '@/public/logo/googlefont-logo.png';
-import heroiconslogo from '@/public/logo/heroicons-logo.png';
-import ibmcarbonlogo from '@/public/logo/ibmcarbon-logo.png';
-import iconbuddylogo from '@/public/logo/iconbuddy-logo.png';
-import iconfontlogo from '@/public/logo/iconfont-logo.png';
-import iconparklogo from '@/public/logo/iconpark-logo.png';
-import ifdesignlogo from '@/public/logo/ifdesign-logo.png';
-import layerlogodark from '@/public/logo/layer-logo-dark.png';
-import layerlogolight from '@/public/logo/layer-logo-light.png';
-import lexingtonlogo from '@/public/logo/lexington-logo.png';
-import lucidelogodark from '@/public/logo/lucide-logo-dark.png';
-import lucidelogolight from '@/public/logo/lucide-logo-light.png';
-import maokenlogo from '@/public/logo/maoken-logo.png';
-import marcologo from '@/public/logo/marco-logo.png';
-import meiyelogo from '@/public/logo/meiye-logo.png';
-import mobbinlogodark from '@/public/logo/mobbin-logo-dark.png';
-import mobbinlogolight from '@/public/logo/mobbin-logo-light.png';
-import navbarkitlogo from '@/public/logo/navbarkit-logo.png';
-import newspacelogo from '@/public/logo/newspace-logo.png';
-import patrickdavidlogo from '@/public/logo/patrickdavid-logo.png';
-import phosphoriconslogo from '@/public/logo/phosphoricons-logo.png';
-import polarisiconslogo from '@/public/logo/polarisicons-logo.png';
-import radixlogodark from '@/public/logo/radix-logo-dark.png';
-import radixlogolight from '@/public/logo/radix-logo-light.png';
-import remixiconslogo from '@/public/logo/remixicons-logo.png';
-import shiryokulogo from '@/public/logo/shiryoku-logo.png';
-import stripelogo from '@/public/logo/stripe-logo.png';
-import theleagueofmoveabletypelogo from '@/public/logo/theleagueofmoveabletype-logo.png';
-import tuneralogo from '@/public/logo/tunera-logo.png';
-import uiiiuiiilogo from '@/public/logo/uiiiuiii-logo.png';
-import uinoteslogo from '@/public/logo/uinotes-logo.png';
-import untitleduilogo from '@/public/logo/untitledui-logo.png';
-import v0logodark from '@/public/logo/v0-logo-dark.png';
-import v0logolight from '@/public/logo/v0-logo-light.png';
-import visualjournallogo from '@/public/logo/visualjournal-logo.png';
-import yasminslogo from '@/public/logo/yasmins-logo.png';
+import type { iLink } from '@/data/link.type';
 
 export const allLinks: iLink[] = [
   {
@@ -66,7 +7,7 @@ export const allLinks: iLink[] = [
       'A clean, consistent, and neutral icon library crafted specifically for modern UI design. Made for Figma, in Figma.',
     feature: ['Figma'],
     category: 'Icons',
-    icon: untitleduilogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/untitledui-logo.png',
     url: 'https://www.untitledui.com/icons',
     isFavorite: true,
   },
@@ -77,8 +18,8 @@ export const allLinks: iLink[] = [
     feature: ['React', 'Vue'],
     category: 'Icons',
     iconThemed: {
-      light: lucidelogolight,
-      dark: lucidelogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/lucide-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/lucide-logo-dark.png',
     },
     url: 'https://lucide.dev/',
   },
@@ -88,8 +29,8 @@ export const allLinks: iLink[] = [
     feature: ['React'],
     category: 'Icons',
     iconThemed: {
-      light: radixlogolight,
-      dark: radixlogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/radix-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/radix-logo-dark.png',
     },
     url: 'https://www.radix-ui.com/icons',
   },
@@ -99,7 +40,7 @@ export const allLinks: iLink[] = [
       'A design system built by IBM · Angular & React & Vue & Svelte',
     feature: ['Multi-platform'],
     category: 'Icons',
-    icon: ibmcarbonlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/ibmcarbon-logo.png',
     url: 'https://carbondesignsystem.com/elements/icons/library/',
   },
   {
@@ -108,7 +49,7 @@ export const allLinks: iLink[] = [
       '288+ icons · React & Vue libraries · Designed by the makers of Tailwind CSS.',
     feature: ['Size Customized'],
     category: 'Icons',
-    icon: heroiconslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/heroicons-logo.png',
     url: 'https://heroicons.com/',
     isFavorite: true,
   },
@@ -117,7 +58,7 @@ export const allLinks: iLink[] = [
     description: '2736+ icons · React & Vue libraries',
     feature: ['Multi-platform'],
     category: 'Icons',
-    icon: remixiconslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/remixicons-logo.png',
     url: 'https://remixicon.com/',
     isFavorite: true,
   },
@@ -126,7 +67,7 @@ export const allLinks: iLink[] = [
     description: '7488+ icons · React & Vue libraries',
     feature: ['Multi-platform'],
     category: 'Icons',
-    icon: phosphoriconslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/phosphoricons-logo.png',
     url: 'https://phosphoricons.com/',
   },
   {
@@ -134,7 +75,7 @@ export const allLinks: iLink[] = [
     description: 'Designed by Shopify',
     feature: ['React'],
     category: 'Icons',
-    icon: polarisiconslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/polarisicons-logo.png',
     url: 'https://polaris.shopify.com/icons',
   },
   {
@@ -143,8 +84,8 @@ export const allLinks: iLink[] = [
     feature: ['Multi-platform'],
     category: 'Icons',
     iconThemed: {
-      light: atlasiconslogolight,
-      dark: atlasiconslogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/atlasicons-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/atlasicons-logo-dark.png',
     },
     url: 'https://atlasicons.vectopus.com/',
   },
@@ -153,7 +94,7 @@ export const allLinks: iLink[] = [
     description: 'Organize those high-quality icon assets',
     feature: ['Treasure', 'polymerization'],
     category: 'Icons',
-    icon: chiiconslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/chiicons-logo.png',
     url: 'https://uxchi.notion.site/0d118e226bf2439a9641127149b16361?v=4275064af9ab4692bc58a3e72795c770',
   },
   {
@@ -161,7 +102,7 @@ export const allLinks: iLink[] = [
     description: '2658+ icons · React & Vue libraries',
     feature: ['Multi-platform'],
     category: 'Icons',
-    icon: iconparklogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/iconpark-logo.png',
     url: 'https://iconpark.oceanengine.com/',
   },
   {
@@ -169,7 +110,7 @@ export const allLinks: iLink[] = [
     description: '26,909,769+(Aggregation) icons · Font & SVG',
     feature: ['Treasure'],
     category: 'Icons',
-    icon: iconfontlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/iconfont-logo.png',
     url: 'https://www.iconfont.cn/',
   },
   {
@@ -177,7 +118,7 @@ export const allLinks: iLink[] = [
     description: '203,940+(Aggregation) icons The ultimate source for icons.',
     feature: ['203,940+'],
     category: 'Icons',
-    icon: iconbuddylogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/iconbuddy-logo.png',
     url: 'https://iconbuddy.app/',
   },
   {
@@ -185,7 +126,7 @@ export const allLinks: iLink[] = [
     description: 'Google Fonts are open source and are without cost',
     feature: ['Open Source', 'Free'],
     category: 'Fonts',
-    icon: googlefontlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/googlefont-logo.png',
     url: 'https://fonts.google.com/',
   },
   {
@@ -193,7 +134,7 @@ export const allLinks: iLink[] = [
     description: 'Collletttivo is an Open-Source type foundry.',
     feature: ['Open Source'],
     category: 'Fonts',
-    icon: collletttivologo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/collletttivo-logo.png',
     url: 'https://www.collletttivo.it/',
   },
   {
@@ -201,7 +142,7 @@ export const allLinks: iLink[] = [
     description: 'present new and original typefaces for everyone',
     feature: ['Transnational'],
     category: 'Fonts',
-    icon: tuneralogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/tunera-logo.png',
     url: 'https://www.tunera.xyz/',
   },
   {
@@ -210,7 +151,7 @@ export const allLinks: iLink[] = [
       'Free fonts service launched by the Indian Type Foundry (ITF), 100% free for personal and commercial',
     feature: ['100% free'],
     category: 'Fonts',
-    icon: fontsharelogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/fontshare-logo.png',
     url: 'https://www.fontshare.com/',
   },
   {
@@ -219,7 +160,7 @@ export const allLinks: iLink[] = [
       'The short story here is that we love creating beautiful sets of letters',
     feature: ['letters'],
     category: 'Fonts',
-    icon: etclogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/etc-logo.png',
     url: 'https://etceteratype.co/',
   },
   {
@@ -227,7 +168,7 @@ export const allLinks: iLink[] = [
     description: 'The original, the first, the Open Source font foundry.',
     feature: ['Open Source'],
     category: 'Fonts',
-    icon: theleagueofmoveabletypelogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/theleagueofmoveabletype-logo.png',
     url: 'https://www.theleagueofmoveabletype.com/',
   },
   {
@@ -235,7 +176,7 @@ export const allLinks: iLink[] = [
     description: 'Provides ALLINONE zip and font previews',
     feature: ['font previews'],
     category: 'Fonts',
-    icon: maokenlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/maoken-logo.png',
     url: 'https://www.maoken.com/all-fonts',
   },
   {
@@ -243,7 +184,7 @@ export const allLinks: iLink[] = [
     description: 'Provides zip and font poster application',
     feature: ['zip'],
     category: 'Fonts',
-    icon: uiiiuiiilogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/uiiiuiii-logo.png',
     url: 'https://uiiiuiii.com/tool/typeface',
   },
   {
@@ -251,7 +192,7 @@ export const allLinks: iLink[] = [
     description: 'Minify font seamlessly, Support NPM or Client',
     feature: ['Minify'],
     category: 'Fonts',
-    icon: fontminlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/fontmin-logo.png',
     url: 'https://github.com/ecomfe/fontmin',
   },
   {
@@ -261,8 +202,8 @@ export const allLinks: iLink[] = [
     feature: ['Automatic'],
     category: 'Fonts',
     iconThemed: {
-      light: githublogolight,
-      dark: githublogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/github-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/github-logo-dark.png',
     },
     url: 'https://github.com/allanguys/font-spider-plus',
   },
@@ -272,8 +213,8 @@ export const allLinks: iLink[] = [
     feature: ['Showcase'],
     category: 'Inspirations',
     iconThemed: {
-      light: framerlogolight,
-      dark: framerlogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/framer-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/framer-logo-dark.png',
     },
     url: 'https://www.framer.com/gallery/',
   },
@@ -282,7 +223,7 @@ export const allLinks: iLink[] = [
     description: "Won IF design awards's User Interface (UI)",
     feature: ['Award-winning UI'],
     category: 'Inspirations',
-    icon: ifdesignlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/ifdesign-logo.png',
     url: 'https://ifdesign.com/en/winner-ranking/winner-overview/?awardId=2&disciplineId=20&sort=desc',
   },
   {
@@ -291,8 +232,8 @@ export const allLinks: iLink[] = [
     feature: ['Digital creatives'],
     category: 'Inspirations',
     iconThemed: {
-      light: awwwardslogolight,
-      dark: awwwardslogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/awwwards-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/awwwards-logo-dark.png',
     },
     url: 'https://www.awwwards.com/websites/',
   },
@@ -302,8 +243,8 @@ export const allLinks: iLink[] = [
     feature: ['Designer community'],
     category: 'Inspirations',
     iconThemed: {
-      light: layerlogolight,
-      dark: layerlogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/layer-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/layer-logo-dark.png',
     },
     url: 'https://layers.to/',
   },
@@ -313,8 +254,8 @@ export const allLinks: iLink[] = [
     feature: ['Mobile && web'],
     category: 'Inspirations',
     iconThemed: {
-      light: mobbinlogolight,
-      dark: mobbinlogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/mobbin-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/mobbin-logo-dark.png',
     },
     url: 'https://mobbin.com/browse/ios/apps',
     isFavorite: true,
@@ -324,7 +265,7 @@ export const allLinks: iLink[] = [
     description:
       'This is the place where to find the freshest app visual interface design inspiration',
     feature: ['freshest'],
-    icon: appinspologo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/appinspo-logo.png',
     category: 'Inspirations',
     url: 'https://www.appinspo.com/',
   },
@@ -334,7 +275,7 @@ export const allLinks: iLink[] = [
       'Lexington Themes provides Astro.js and Tailwind themes for various purposes, including design, development, business, and personal use.',
     feature: ['Astro', 'Tailwind'],
     category: 'Inspirations',
-    icon: lexingtonlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/lexington-logo.png',
     url: 'https://lexingtonthemes.com/',
   },
   {
@@ -344,8 +285,8 @@ export const allLinks: iLink[] = [
     feature: ['collection', 'development'],
     category: 'Inspirations',
     iconThemed: {
-      light: framersectionslogolight,
-      dark: framersectionslogodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/framer-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/framer-logo-dark.png',
     },
     url: 'https://www.framersections.com',
   },
@@ -355,7 +296,7 @@ export const allLinks: iLink[] = [
       'Stripe Elements is a set of prebuilt UI components for building your web checkout flow.',
     feature: ['prebuilt UI'],
     category: 'Inspirations',
-    icon: stripelogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/stripe-logo.png',
     url: 'https://docs.stripe.com/payments/elements',
   },
   {
@@ -364,7 +305,7 @@ export const allLinks: iLink[] = [
       'We curate beautifully designed decks, slides, keynotes, guidelines — or whatever you call them.',
     feature: ['presentation'],
     category: 'Inspirations',
-    icon: deckgallerylogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/deckgallery-logo.png',
     url: 'https://www.deck.gallery/',
   },
   {
@@ -373,7 +314,7 @@ export const allLinks: iLink[] = [
       'A navigation library with access to the entire 300+ navbar kit, dark/light themes, and more.',
     feature: ['300+', 'navbars'],
     category: 'Inspirations',
-    icon: navbarkitlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/navbarkit-logo.png',
     url: 'https://navbars.framer.website',
   },
   {
@@ -381,7 +322,7 @@ export const allLinks: iLink[] = [
     description: 'Curated websites from the dark side',
     feature: ['Dark-themed'],
     category: 'Inspirations',
-    icon: darkdesignlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/darkdesign-logo.png',
     url: 'https://www.dark.design/',
   },
   {
@@ -389,7 +330,7 @@ export const allLinks: iLink[] = [
     description: 'Organize those high-quality Inspirations',
     feature: ['Organized'],
     category: 'Inspirations',
-    icon: chiinspirationslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/chiinspirations-logo.png',
     url: 'https://uxchi.notion.site/UI-Inspiration-881b4c0179a74935a3f607ad3521cdb5',
   },
   {
@@ -398,7 +339,7 @@ export const allLinks: iLink[] = [
       'collects excellent App UI screenshots, only the landing design',
     feature: ['implemented'],
     category: 'Inspirations',
-    icon: uinoteslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/uinotes-logo.png',
     url: 'https://uinotes.com/',
   },
   {
@@ -406,7 +347,7 @@ export const allLinks: iLink[] = [
     description: 'Premium Design Content Recommendation Platform',
     feature: ['design content'],
     category: 'Inspirations',
-    icon: meiyelogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/meiye-logo.png',
     url: 'https://www.meiye.art/',
     isFavorite: true,
   },
@@ -415,7 +356,7 @@ export const allLinks: iLink[] = [
     description: 'Basement Black & Orange/parallax/anime',
     feature: ['Parallax'],
     category: 'Studio',
-    icon: basementlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/basement-logo.png',
     url: 'https://basement.studio/',
   },
   {
@@ -423,7 +364,7 @@ export const allLinks: iLink[] = [
     description: 'Award-winning UX/UI Designer, Vivid animation',
     feature: ['Award', 'animation'],
     category: 'Studio',
-    icon: patrickdavidlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/patrickdavid-logo.png',
     url: 'https://patrickdavid.com/',
   },
   {
@@ -432,7 +373,7 @@ export const allLinks: iLink[] = [
       'The ultimate use of lines, the best presentation of design. Develop software for brand development',
     feature: ['Ultimate', 'Brand'],
     category: 'Studio',
-    icon: newspacelogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/newspace-logo.png',
     url: 'https://newpeace.jp/',
   },
   {
@@ -441,7 +382,7 @@ export const allLinks: iLink[] = [
       "Scarpellini's Blog, show the best branding and graphic design projects from all over the world",
     feature: ['Showcase'],
     category: 'Studio',
-    icon: visualjournallogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/visualjournal-logo.png',
     url: 'https://visualjournal.it/',
   },
   {
@@ -449,7 +390,7 @@ export const allLinks: iLink[] = [
     description: 'Simplicity Portfolio, framer',
     feature: ['Simplicity'],
     category: 'Studio',
-    icon: shiryokulogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/shiryoku-logo.png',
     url: 'https://shiryoku.framer.website/',
   },
   {
@@ -457,7 +398,7 @@ export const allLinks: iLink[] = [
     description: 'Marco Cornacchia — Designing AI experiences at Figma',
     feature: ['Simplicity', 'Portfolio'],
     category: 'Studio',
-    icon: marcologo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/marco-logo.png',
     url: 'https://www.marco.fyi/',
   },
   {
@@ -465,7 +406,7 @@ export const allLinks: iLink[] = [
     description: 'Interactive 3D scene, Nextjs, GamePlay',
     feature: ['3D', 'GamePlay'],
     category: 'Studio',
-    icon: yasminslogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/yasmins-logo.png',
     url: 'https://www.yasmins.site/',
   },
   {
@@ -473,7 +414,7 @@ export const allLinks: iLink[] = [
     description: 'Cocos creator',
     feature: ['3D', 'GamePlay'],
     category: 'Studio',
-    icon: garryuilogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/garryui-logo.png',
     url: 'https://garryui.cn/',
   },
   {
@@ -481,7 +422,7 @@ export const allLinks: iLink[] = [
     description: 'Florian, Design Engineer, Simplicity',
     feature: ['Simplicity'],
     category: 'Studio',
-    icon: florianlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/florian-logo.png',
     url: 'https://floriankiem.com/',
   },
   {
@@ -490,8 +431,17 @@ export const allLinks: iLink[] = [
       'Designed by Buttermaxstudio, The gold standard for buttery-smooth digital production',
     feature: ['Simplicity'],
     category: 'Studio',
-    icon: buttermaxlogo,
+    icon: 'https://cdn.yikzero.com/rosure/logo/buttermax-logo.png',
     url: 'https://buttermax.net/',
+  },
+  {
+    title: 'Ethan Chng Design',
+    description:
+      'a designer crafting interfaces and interactions that are useful and feel natural. ',
+    feature: ['Smooth', 'Blur'],
+    category: 'Studio',
+    icon: 'https://cdn.yikzero.com/rosure/logo/ethanchngdesign-logo.png',
+    url: 'https://www.ethanchng.com/',
   },
   {
     title: 'v0 by Vercel',
@@ -500,8 +450,8 @@ export const allLinks: iLink[] = [
     feature: ['shadcn/ui', 'Tailwind'],
     category: 'AI',
     iconThemed: {
-      light: v0logolight,
-      dark: v0logodark,
+      light: 'https://cdn.yikzero.com/rosure/logo/v0-logo-light.png',
+      dark: 'https://cdn.yikzero.com/rosure/logo/v0-logo-dark.png',
     },
     url: 'https://v0.dev/',
   },

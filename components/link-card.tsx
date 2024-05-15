@@ -1,5 +1,4 @@
 import { iLink } from '@/data/link.type';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
@@ -19,27 +18,30 @@ export default function LinkCard({ link }: LinkCardProps) {
         >
           {link.iconThemed?.light && link.iconThemed?.dark ? (
             <>
-              <Image
+              <img
                 style={{ transform: 'translate3d(0, 0, 0)' }}
-                src={link.iconThemed.light}
-                alt="wechat qrcode"
-                placeholder="blur"
+                src={`${link.iconThemed.light}!/format/webp`}
+                alt={link.title}
+                width={32}
+                height={32}
                 className="block size-8 rounded-lg object-cover dark:hidden"
               />
-              <Image
+              <img
                 style={{ transform: 'translate3d(0, 0, 0)' }}
-                src={link.iconThemed.dark}
-                alt="wechat qrcode"
-                placeholder="blur"
+                src={`${link.iconThemed.dark}!/format/webp`}
+                alt={link.title}
+                width={32}
+                height={32}
                 className="hidden size-8 rounded-lg object-cover dark:block"
               />
             </>
           ) : link.icon ? (
-            <Image
+            <img
               style={{ transform: 'translate3d(0, 0, 0)' }}
-              src={link.icon}
-              alt="wechat qrcode"
-              placeholder="blur"
+              src={`${link.icon}!/format/webp`}
+              alt={link.title}
+              width={32}
+              height={32}
               className="size-8 rounded-lg object-cover"
             />
           ) : null}
