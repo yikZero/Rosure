@@ -9,8 +9,11 @@ interface SectionLinksProps {
 export default async function SectionLinks({ query }: SectionLinksProps) {
   const allLinks = await fetchLinks({});
 
-  const filteredLinks = allLinks.filter((link) =>
-    link.title.toLowerCase().includes(query),
+  const filteredLinks = allLinks.filter(
+    (link) =>
+      link.title.toLowerCase().includes(query) ||
+      link.feature?.toLowerCase().includes(query) ||
+      link.description?.toLowerCase().includes(query),
   );
 
   const linksByCategory = allCategories.reduce(
