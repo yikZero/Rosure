@@ -1,13 +1,15 @@
 import LinkCard from '@/components/link-card';
-import { allCategories } from '@/data/category';
-import { allLinks } from '@/data/links';
+import { allCategories } from '@/lib/category';
+import fetchLinks from '@/lib/link-data';
 import { StarIcon } from '@heroicons/react/20/solid';
 
-export default function Home({
+export default async function Home({
   searchParams,
 }: {
   searchParams?: { query?: string };
 }) {
+  const allLinks = await fetchLinks({});
+
   const query = searchParams?.query?.toLowerCase() || '';
 
   const filteredLinks = allLinks.filter((link) =>

@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Link {
+  id          Int       @id @default(autoincrement())
+  title       String    @db.VarChar(255)
+  description String    @db.Text
+  feature     String    @db.VarChar(255)
+  icon        String?   @db.VarChar(255)
+  iconLight   String?   @db.VarChar(2048)
+  iconDark    String?   @db.VarChar(2048)
+  category    String    @db.VarChar(255)
+  url         String    @db.VarChar(2048)
+  isFavorite  Boolean   @default(false)
+  createdTime DateTime? @default(now()) @db.Timestamp(0)
+
+  @@index([category])
+  @@index([title])
+}
+
+model Category {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(255)
+  url  String @db.VarChar(2048)
+
+  @@index([name])
+}

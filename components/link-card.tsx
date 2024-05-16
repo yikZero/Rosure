@@ -1,9 +1,9 @@
-import { iLink } from '@/data/link.type';
+import type { Link as LinkType } from '@prisma/client';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
 interface LinkCardProps {
-  link: iLink;
+  link: LinkType;
 }
 
 export default function LinkCard({ link }: LinkCardProps) {
@@ -16,11 +16,11 @@ export default function LinkCard({ link }: LinkCardProps) {
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-2 rounded-lg border border-border/70 px-4 py-5 transition-all duration-200 hover:bg-background/50"
         >
-          {link.iconThemed?.light && link.iconThemed?.dark ? (
+          {link.iconLight && link.iconDark ? (
             <>
               <img
                 style={{ transform: 'translate3d(0, 0, 0)' }}
-                src={`${link.iconThemed.light}!/format/webp`}
+                src={`${link.iconLight}!/format/webp`}
                 alt={link.title}
                 width={32}
                 height={32}
@@ -28,7 +28,7 @@ export default function LinkCard({ link }: LinkCardProps) {
               />
               <img
                 style={{ transform: 'translate3d(0, 0, 0)' }}
-                src={`${link.iconThemed.dark}!/format/webp`}
+                src={`${link.iconDark}!/format/webp`}
                 alt={link.title}
                 width={32}
                 height={32}
@@ -53,7 +53,7 @@ export default function LinkCard({ link }: LinkCardProps) {
               {link.description}
             </div>
             <div className="hidden flex-row gap-1 sm:flex">
-              {link.feature.map((feature, index) => (
+              {link.feature.split(',').map((feature, index) => (
                 <div
                   key={index}
                   className="self-center text-nowrap rounded-full border border-border bg-background/30 px-3 text-xs font-medium text-secondary"

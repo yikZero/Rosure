@@ -1,7 +1,7 @@
 import LinkCard from '@/components/link-card';
 import ScrollTop from '@/components/scroll-top';
-import { allCategories } from '@/data/category';
-import { getLinksForCategory } from '@/lib/link.utils';
+import { allCategories } from '@/lib/category';
+import fetchLinks from '@/lib/link-data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -11,7 +11,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function List({ params }: { params: { slug: string } }) {
+export default async function List({ params }: { params: { slug: string } }) {
   const category = allCategories.find(
     (category) => category.name.toLowerCase() === params.slug,
   );
@@ -20,7 +20,7 @@ export default function List({ params }: { params: { slug: string } }) {
     notFound();
   }
 
-  const categoryLinks = getLinksForCategory(params.slug);
+  const categoryLinks = await fetchLinks({ category: category.name });
 
   if (categoryLinks.length == 0)
     return (
