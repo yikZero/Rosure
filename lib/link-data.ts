@@ -4,7 +4,7 @@ interface fetchLinksProps {
   category?: string;
 }
 
-export default async function fetchLinks({ category }: fetchLinksProps) {
+export async function fetchLinks({ category }: fetchLinksProps) {
   if (category) {
     return await prisma.link.findMany({
       where: {
@@ -16,4 +16,12 @@ export default async function fetchLinks({ category }: fetchLinksProps) {
   } else {
     return await prisma.link.findMany();
   }
+}
+
+export async function fetchFavoriteLinks() {
+  return await prisma.link.findMany({
+    where: {
+      isFavorite: true,
+    },
+  });
 }

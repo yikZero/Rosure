@@ -1,9 +1,10 @@
-import LinkCard from '@/components/link-card';
-import ScrollTop from '@/components/scroll-top';
+import ListLinks from '@/components/list-links';
+import { LinkCardSkeleton } from '@/components/skeletons';
 import { allCategories } from '@/lib/category';
-import fetchLinks from '@/lib/link-data';
+import { fetchLinks } from '@/lib/link-data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
 export async function generateStaticParams() {
   return allCategories.map((category) => ({
@@ -33,12 +34,9 @@ export default async function List({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <ScrollTop />
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {categoryLinks.map((link, index) => (
-          <LinkCard key={index} link={link} />
-        ))}
-      </div>
+      <Suspense fallback={<LinkCardSkeleton count={24} />}>
+        <ListLinks categoryLinks={categoryLinks} />
+      </Suspense>
     </>
   );
 }
