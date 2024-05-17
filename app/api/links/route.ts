@@ -1,40 +1,44 @@
 import prisma from '@/lib/db';
-import type { Link } from '@prisma/client';
+import { NextRequest } from 'next/server';
 
-interface LinkCategory {
-  category: string;
-  count: number;
-  links: Link[];
-}
+const ADD_LINK_SECRET = process.env.ADD_LINK_SECRET;
 
-export async function GET() {
+export async function POST(req: NextRequest) {
+  const addLinkSecret = req.headers.get('ADD_LINK_SECRET');
+  if (!addLinkSecret || addLinkSecret !== ADD_LINK_SECRET) {
+    return new Response('Unauthorized', { status: 401 });
+  }
+
   try {
-    const groupedLinks = await prisma.link.groupBy({
-      by: ['category'],
-      _count: {
-        _all: true,
-      },
-      orderBy: {
-        category: 'asc',
-      },
-    });
-
-    const result: LinkCategory[] = groupedLinks.map(({ category, _count }) => ({
+    const body = await req.json();
+    const {
+      title,
+      description,
+      feature,
+      icon,
+      iconLight,
+      iconDark,
       category,
-      count: _count._all,
-      links: [],
-    }));
+      url,
+      isFavorite,
+    } = body;
 
-    const allLinks: Link[] = await prisma.link.findMany();
-
-    result.forEach((categoryObj) => {
-      categoryObj.links = allLinks.filter(
-        (link) => link.category === categoryObj.category,
-      );
+    const link = await prisma.link.create({
+      data: {
+        title,
+        description,
+        feature,
+        icon,
+        iconLight,
+        iconDark,
+        category,
+        url,
+        isFavorite,
+      },
     });
 
-    return new Response(JSON.stringify(result), {
-      status: 200,
+    return new Response(JSON.stringify(link), {
+      status: 201,
       headers: {
         'Content-Type': 'application/json',
       },
