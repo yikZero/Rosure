@@ -6,6 +6,10 @@ interface LinkCardProps {
 }
 
 export default function LinkCard({ link }: LinkCardProps) {
+  const getFirstLetter = (string: string) => {
+    if (!string) return '';
+    return string.charAt(0).toUpperCase();
+  };
   return (
     <>
       <Link
@@ -42,7 +46,11 @@ export default function LinkCard({ link }: LinkCardProps) {
             height={32}
             className="size-8 rounded-lg object-cover"
           />
-        ) : null}
+        ) : (
+          <div className="flex size-8 items-center justify-center rounded-lg bg-brand-600 text-base font-medium text-white">
+            {getFirstLetter(link.title)}
+          </div>
+        )}
         <div className="flex flex-col items-center gap-1.5">
           <div className="line-clamp-1 items-center text-sm font-medium text-primary">
             {link.title}
