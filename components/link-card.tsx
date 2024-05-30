@@ -1,4 +1,5 @@
 import type { Link as LinkType } from '@prisma/client';
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface LinkCardProps {
@@ -20,7 +21,7 @@ export default function LinkCard({ link }: LinkCardProps) {
       >
         {link.iconLight && link.iconDark ? (
           <>
-            <img
+            <Image
               style={{ transform: 'translate3d(0, 0, 0)' }}
               src={`${link.iconLight}!/format/webp`}
               alt={link.title}
@@ -28,7 +29,7 @@ export default function LinkCard({ link }: LinkCardProps) {
               height={32}
               className="block size-8 rounded-lg object-cover dark:hidden"
             />
-            <img
+            <Image
               style={{ transform: 'translate3d(0, 0, 0)' }}
               src={`${link.iconDark}!/format/webp`}
               alt={link.title}
@@ -38,7 +39,7 @@ export default function LinkCard({ link }: LinkCardProps) {
             />
           </>
         ) : link.icon ? (
-          <img
+          <Image
             style={{ transform: 'translate3d(0, 0, 0)' }}
             src={`${link.icon}!/format/webp`}
             alt={link.title}

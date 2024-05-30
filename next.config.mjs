@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: 'cdn.yikzero.com',
       },
     ],
+    unoptimized: true,
   },
 };
 
