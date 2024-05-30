@@ -1,27 +1,14 @@
 import prisma from '@/lib/db';
+import { cache } from 'react';
 
-interface fetchLinksProps {
-  category?: string;
-}
+export const fetchLinks = cache(async function () {
+  return await prisma.link.findMany();
+});
 
-export async function fetchLinks({ category }: fetchLinksProps) {
-  if (category) {
-    return await prisma.link.findMany({
-      where: {
-        category: {
-          equals: category,
-        },
-      },
-    });
-  } else {
-    return await prisma.link.findMany();
-  }
-}
-
-export async function fetchFavoriteLinks() {
+export const fetchFavoriteLinks = cache(async function () {
   return await prisma.link.findMany({
     where: {
       isFavorite: true,
     },
   });
-}
+});

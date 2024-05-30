@@ -13,15 +13,19 @@ export async function generateStaticParams() {
 }
 
 export default async function List({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const category = allCategories.find(
-    (category) => category.name.toLowerCase() === params.slug,
+    (category) => category.name.toLowerCase() === slug,
   );
 
   if (!category) {
     notFound();
   }
 
-  const categoryLinks = await fetchLinks({ category: category.name });
+  const allLinks = await fetchLinks();
+  const categoryLinks = allLinks.filter(
+    (link) => link.category === category.name,
+  );
 
   if (categoryLinks.length == 0)
     return (
@@ -60,3 +64,5 @@ export async function generateMetadata({
 
   return metadata;
 }
+
+export const revalidate = 1800;

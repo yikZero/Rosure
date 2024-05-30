@@ -7,7 +7,7 @@ interface SectionLinksProps {
 }
 
 export default async function SectionLinks({ query }: SectionLinksProps) {
-  const allLinks = await fetchLinks({});
+  const allLinks = await fetchLinks();
 
   const filteredLinks = allLinks.filter(
     (link) =>
