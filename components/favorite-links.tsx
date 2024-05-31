@@ -1,9 +1,11 @@
 import LinkCard from '@/components/link-card';
-import { fetchFavoriteLinks } from '@/lib/link-data';
+import { fetchLinks } from '@/lib/link-data';
 import { StarIcon } from '@heroicons/react/20/solid';
 
 export default async function FavoriteLinks() {
-  const favoriteLinks = await fetchFavoriteLinks();
+  const allLinks = await fetchLinks();
+
+  const favoriteLinks = allLinks.filter((link) => link.isFavorite);
 
   if (!favoriteLinks || favoriteLinks.length === 0) return null;
 
